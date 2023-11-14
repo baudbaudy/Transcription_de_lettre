@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-11-14T15:25:06Z. .
+Schema generated from ODD source 2023-11-14T15:39:39Z. .
 TEI Edition: Version 4.4.0. Last updated on
         19th April 2022, revision ff9cc28b0
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.4.0/
@@ -4825,12 +4825,12 @@ Suggested values include: 1] ship</a:documentation>
          <optional>
             <ref name="name"/>
          </optional>
-         <optional>
+         <zeroOrMore>
             <ref name="lb"/>
-         </optional>
-         <optional>
+         </zeroOrMore>
+         <zeroOrMore>
             <ref name="del"/>
-         </optional>
+         </zeroOrMore>
          <zeroOrMore>
             <ref name="w"/>
          </zeroOrMore>
