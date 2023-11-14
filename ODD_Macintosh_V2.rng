@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-11-14T16:10:05Z. .
+Schema generated from ODD source 2023-11-14T16:26:57Z. .
 TEI Edition: Version 4.4.0. Last updated on
         19th April 2022, revision ff9cc28b0
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.4.0/
@@ -2259,7 +2259,26 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="name">
       <element name="name">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Contient le nom d'une personne) permet de relever le nom d'une personne, si on a pas su différencier le prénom du nom de famille. [3.6.1. Referring Strings]</a:documentation>
-         <ref name="macro.phraseSeq"/>
+         <text/>
+         <zeroOrMore>
+            <ref name="lb"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="del"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="w"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="unclear"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="gap"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="choice"/>
+         </zeroOrMore>
+         <text/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4768,15 +4787,15 @@ Elements]</a:documentation>
       <element name="orgName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(nom d'organisation) contient le nom d'une organisation. [13.2.2. Organizational Names]</a:documentation>
          <text/>
-         <optional>
+         <zeroOrMore>
             <ref name="forename"/>
-         </optional>
-         <optional>
+         </zeroOrMore>
+         <zeroOrMore>
             <ref name="surname"/>
-         </optional>
-         <optional>
+         </zeroOrMore>
+         <zeroOrMore>
             <ref name="name"/>
-         </optional>
+         </zeroOrMore>
          <zeroOrMore>
             <ref name="lb"/>
          </zeroOrMore>
@@ -4874,6 +4893,12 @@ Suggested values include: 1] ship</a:documentation>
          </zeroOrMore>
          <zeroOrMore>
             <ref name="unclear"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="gap"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="choice"/>
          </zeroOrMore>
          <text/>
          <ref name="att.global.attribute.xmlid"/>
@@ -4993,7 +5018,26 @@ Suggested values include: 1] ship</a:documentation>
    <define name="forename">
       <element name="forename">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prénom d'une personne) permet de relever le prénom d'une personne. [13.2.1. Personal Names]</a:documentation>
-         <ref name="macro.phraseSeq"/>
+         <text/>
+         <zeroOrMore>
+            <ref name="lb"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="del"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="w"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="unclear"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="gap"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="choice"/>
+         </zeroOrMore>
+         <text/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -5036,7 +5080,26 @@ Suggested values include: 1] ship</a:documentation>
    <define name="placeName">
       <element name="placeName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom de lieu) permet de signaler le nom d'un lieu (absolu ou relatif). [13.2.3. Place Names]</a:documentation>
-         <ref name="macro.phraseSeq"/>
+         <text/>
+         <zeroOrMore>
+            <ref name="lb"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="del"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="w"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="unclear"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="gap"/>
+         </zeroOrMore>
+         <zeroOrMore>
+            <ref name="choice"/>
+         </zeroOrMore>
+         <text/>
          <ref name="att.datable.iso.attribute.when-iso"/>
          <ref name="att.datable.iso.attribute.notBefore-iso"/>
          <ref name="att.datable.iso.attribute.notAfter-iso"/>
