@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-11-14T17:59:14Z. .
+Schema generated from ODD source 2023-11-15T09:49:43Z. .
 TEI Edition: Version 4.4.0. Last updated on
         19th April 2022, revision ff9cc28b0
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.4.0/
@@ -2259,26 +2259,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
    <define name="name">
       <element name="name">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Contient le nom d'une personne) permet de relever le nom d'une personne, si on a pas su différencier le prénom du nom de famille. [3.6.1. Referring Strings]</a:documentation>
-         <text/>
-         <zeroOrMore>
-            <ref name="lb"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="del"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="w"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="unclear"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="gap"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="choice"/>
-         </zeroOrMore>
-         <text/>
+         <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4786,41 +4767,7 @@ Elements]</a:documentation>
    <define name="orgName">
       <element name="orgName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(nom d'organisation) contient le nom d'une organisation. [13.2.2. Organizational Names]</a:documentation>
-         <text/>
-         <zeroOrMore>
-            <ref name="forename"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="surname"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="name"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="lb"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="del"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="w"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="unclear"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="gap"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="choice"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="add"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="hi"/>
-         </zeroOrMore>
-         <text/>
+         <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4968,26 +4915,7 @@ Suggested values include: 1] ship</a:documentation>
    <define name="surname">
       <element name="surname">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Nom de famille) permet de relever le nom de famille d'une personne. [13.2.1. Personal Names]</a:documentation>
-         <text/>
-         <zeroOrMore>
-            <ref name="lb"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="del"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="w"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="unclear"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="gap"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="choice"/>
-         </zeroOrMore>
-         <text/>
+         <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -5030,26 +4958,7 @@ Suggested values include: 1] ship</a:documentation>
    <define name="forename">
       <element name="forename">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Prénom d'une personne) permet de relever le prénom d'une personne. [13.2.1. Personal Names]</a:documentation>
-         <text/>
-         <zeroOrMore>
-            <ref name="lb"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="del"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="w"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="unclear"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="gap"/>
-         </zeroOrMore>
-         <zeroOrMore>
-            <ref name="choice"/>
-         </zeroOrMore>
-         <text/>
+         <ref name="macro.phraseSeq"/>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
