@@ -1577,7 +1577,7 @@
             
             <elementSpec ident="choice" mode="change">
                <content>
-                  <elementRef key="w"/>
+                  <elementRef key="w" minOccurs="0"/>
                </content>
             </elementSpec>
             
