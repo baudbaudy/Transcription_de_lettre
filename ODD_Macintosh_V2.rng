@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-07-15T14:49:39Z. .
+Schema generated from ODD source 2024-07-15T15:02:53Z. .
 TEI Edition: Version 4.4.0. Last updated on
         19th April 2022, revision ff9cc28b0
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.4.0/
@@ -4342,17 +4342,51 @@ Elements]</a:documentation>
    <define name="w">
       <element name="w">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(mot) représente un mot grammatical (pas nécessairement orthographique) [17.1. Linguistic Segment Categories 17.4.2. Lightweight Linguistic Annotation]</a:documentation>
-         <zeroOrMore>
-            <choice>
-               <text/>
-               <ref name="model.gLike"/>
-               <ref name="w"/>
-               <ref name="model.global"/>
-               <ref name="model.lPart"/>
-               <ref name="model.hiLike"/>
-               <ref name="model.pPart.edit"/>
-            </choice>
-         </zeroOrMore>
+         <optional>
+            <ref name="orgName"/>
+         </optional>
+         <optional>
+            <ref name="abbr"/>
+         </optional>
+         <optional>
+            <ref name="add"/>
+         </optional>
+         <optional>
+            <ref name="cb"/>
+         </optional>
+         <optional>
+            <ref name="choice"/>
+         </optional>
+         <optional>
+            <ref name="corr"/>
+         </optional>
+         <optional>
+            <ref name="del"/>
+         </optional>
+         <optional>
+            <ref name="gap"/>
+         </optional>
+         <optional>
+            <ref name="hi"/>
+         </optional>
+         <optional>
+            <ref name="lb"/>
+         </optional>
+         <optional>
+            <ref name="note"/>
+         </optional>
+         <optional>
+            <ref name="pb"/>
+         </optional>
+         <optional>
+            <ref name="sic"/>
+         </optional>
+         <optional>
+            <ref name="unclear"/>
+         </optional>
+         <optional>
+            <ref name="w"/>
+         </optional>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
