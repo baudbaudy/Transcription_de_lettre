@@ -1575,9 +1575,16 @@
                </attList>
             </elementSpec>
             
-            <elementSpec ident="choice" mode="add">
+            <elementSpec ident="choice" mode="change">
                <content>
                   <elementRef key="w" minOccurs="0"/>
+                  <elementRef key="sic" minOccurs="0"/>
+                  <elementRef key="corr" minOccurs="0"/>
+                  <elementRef key="abbr" minOccurs="0"/>
+                  <elementRef key="expan" minOccurs="0"/>
+                  <elementRef key="unclear" minOccurs="0"/>
+                  <elementRef key="reg" minOccurs="0"/>
+                  <elementRef key="orig" minOccurs="0"/>
                </content>
             </elementSpec>
             
