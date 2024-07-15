@@ -1575,7 +1575,7 @@
                </attList>
             </elementSpec>
             
-            <elementSpec ident="choice" mode="change">
+            <elementSpec ident="choice" mode="add">
                <content>
                   <elementRef key="w" minOccurs="0"/>
                </content>
