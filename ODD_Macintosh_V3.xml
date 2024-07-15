@@ -1959,9 +1959,6 @@
             <classRef key="att.linguistic"/>
             
             <elementSpec ident="w" mode="change"> 
-              
-                          
-               
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="part" mode="change">
