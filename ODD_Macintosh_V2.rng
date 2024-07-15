@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-02-22T18:49:10Z. .
+Schema generated from ODD source 2024-07-15T09:08:53Z. .
 TEI Edition: Version 4.4.0. Last updated on
         19th April 2022, revision ff9cc28b0
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.4.0/
@@ -1690,14 +1690,6 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
          <ref name="model.divBottomPart"/>
       </choice>
    </define>
-   <define name="model.choicePart">
-      <choice>
-         <ref name="sic"/>
-         <ref name="corr"/>
-         <ref name="unclear"/>
-         <ref name="abbr"/>
-      </choice>
-   </define>
    <define name="model.addressLike">
       <choice>
          <ref name="address"/>
@@ -2110,12 +2102,7 @@ The element indicated by @spanTo (<sch:value-of select="@spanTo"/>) must follow 
    <define name="choice">
       <element name="choice">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(choix) regroupe un certain nombre de balisages alternatifs possibles pour un même endroit dans un texte. [3.5. Simple Editorial Changes]</a:documentation>
-         <oneOrMore>
-            <choice>
-               <ref name="model.choicePart"/>
-               <ref name="choice"/>
-            </choice>
-         </oneOrMore>
+         <ref name="w"/>
          <ref name="att.global.attributes"/>
          <empty/>
       </element>
@@ -4297,10 +4284,6 @@ Elements]</a:documentation>
          <empty/>
       </element>
    </define>
-   <define name="att.lexicographic.normalized.attributes">
-      <ref name="att.lexicographic.normalized.attribute.norm"/>
-      <ref name="att.lexicographic.normalized.attribute.orig"/>
-   </define>
    <define name="att.lexicographic.normalized.attribute.norm">
       <optional>
          <attribute name="norm">
@@ -4363,7 +4346,12 @@ Elements]</a:documentation>
          <ref name="att.global.source.attribute.source"/>
          <ref name="att.datcat.attribute.datcat"/>
          <ref name="att.datcat.attribute.valueDatcat"/>
-         <ref name="att.linguistic.attributes"/>
+         <ref name="att.linguistic.attribute.lemma"/>
+         <ref name="att.linguistic.attribute.lemmaRef"/>
+         <ref name="att.linguistic.attribute.msd"/>
+         <ref name="att.linguistic.attribute.join"/>
+         <ref name="att.lexicographic.normalized.attribute.norm"/>
+         <ref name="att.lexicographic.normalized.attribute.orig"/>
          <ref name="att.notated.attributes"/>
          <optional>
             <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
@@ -4374,6 +4362,12 @@ Elements]</a:documentation>
                   <value>N</value>
                   <a:documentation/>
                </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="pos">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.).</a:documentation>
+               <data type="string"/>
             </attribute>
          </optional>
          <empty/>
@@ -6555,8 +6549,6 @@ Child elements of <name/> are only allowed when an external module is being load
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>verso</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <value>appendix</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </attribute>
          </optional>
@@ -6775,14 +6767,6 @@ should correspond to an existing module, via a moduleSpec or
          </attribute>
       </optional>
    </define>
-   <define name="att.linguistic.attributes">
-      <ref name="att.lexicographic.normalized.attributes"/>
-      <ref name="att.linguistic.attribute.lemma"/>
-      <ref name="att.linguistic.attribute.lemmaRef"/>
-      <ref name="att.linguistic.attribute.pos"/>
-      <ref name="att.linguistic.attribute.msd"/>
-      <ref name="att.linguistic.attribute.join"/>
-   </define>
    <define name="att.linguistic.attribute.lemma">
       <optional>
          <attribute name="lemma">
@@ -6798,14 +6782,6 @@ should correspond to an existing module, via a moduleSpec or
             <data type="anyURI">
                <param name="pattern">\S+</param>
             </data>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.linguistic.attribute.pos">
-      <optional>
-         <attribute name="pos">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(part of speech) indicates the part of speech assigned to a token (i.e. information on whether it is a noun, adjective, or verb), usually according to some official reference vocabulary (e.g. for German: STTS, for English: CLAWS, for Polish: NKJP, etc.).</a:documentation>
-            <data type="string"/>
          </attribute>
       </optional>
    </define>
