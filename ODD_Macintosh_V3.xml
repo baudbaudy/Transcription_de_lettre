@@ -916,7 +916,7 @@
                      </valList>
                   </attDef>
                   <attDef ident="ref" mode="change" usage="opt"/>
-                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="type" mode="change" usage="opt"/>
                </attList>
             </elementSpec>
             
