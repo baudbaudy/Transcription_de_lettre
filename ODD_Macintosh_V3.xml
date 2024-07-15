@@ -1958,7 +1958,27 @@
             <!--Checking module analysis-->
             <classRef key="att.linguistic"/>
             
-            <elementSpec ident="w" mode="change">            
+            <elementSpec ident="w" mode="change"> 
+               <content>
+                  <elementRef key="orgName" minOccurs="0"/>
+                  <elementRef key="abbr" minOccurs="0"/>
+                  <elementRef key="add" minOccurs="0"/>
+                  <elementRef key="cb" minOccurs="0"/>
+                  <elementRef key="choice" minOccurs="0"/>
+                  <elementRef key="corr" minOccurs="0"/>
+                  <elementRef key="del" minOccurs="0"/>
+                  <elementRef key="gap" minOccurs="0"/>
+                  <elementRef key="hi" minOccurs="0"/>
+                  <elementRef key="lb" minOccurs="0"/>
+                  <elementRef key="note" minOccurs="0"/>
+                  <elementRef key="pb" minOccurs="0"/>
+                  <elementRef key="sic" minOccurs="0"/>
+                  <elementRef key="unclear" minOccurs="0"/>
+                  <elementRef key="w" minOccurs="0"/>
+               </content>
+               
+                          
+               
                <attList>
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="part" mode="change">
