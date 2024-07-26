@@ -705,7 +705,7 @@
             
             <moduleRef key="tei"/>
             <moduleRef key="header" include="teiHeader fileDesc titleStmt editionStmt edition extent publicationStmt idno availability licence sourceDesc encodingDesc projectDesc editorialDecl segmentation profileDesc handNote langUsage language correspDesc correspAction"/>
-            <moduleRef key="core" include="p unclear hi choice sic cb corr desc add del gap list name rs address addrLine date abbr ref list item graphic pb lb respStmt resp title publisher pubPlace note"/>
+            <moduleRef key="core" include="p unclear hi choice sic cb corr desc add del gap list name rs address addrLine date abbr ref list item graphic pb lb respStmt resp title publisher pubPlace note expan"/>
             <moduleRef key="textstructure" include="TEI text body front back div div1 div2 div3 div4 div5"/>
             
             <!-- MODULES ADDITIONNELS -->
