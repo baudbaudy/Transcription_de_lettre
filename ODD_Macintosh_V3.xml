@@ -1572,6 +1572,12 @@
                   <attDef ident="facs" mode="delete"/>
                   <attDef ident="ref" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
+                  <attDef ident="when" mode="add">
+                     <datatype><dataRef key="teidata.temporal.w3c"/></datatype>
+                  </attDef>
+                  <attDef ident="year" mode="add">
+                     <datatype><dataRef key="teidata.numeric"/></datatype>
+                  </attDef>
                </attList>
             </elementSpec>
             
