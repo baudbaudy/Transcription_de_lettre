@@ -967,7 +967,7 @@
             
             <elementSpec ident="listOrg" mode="change">
                <content>
-                  <elementRef key="org"/>
+                  <elementRef key="org" minOccurs="0" maxOccurs="unbounded"/>
                </content>
                <attList>
                   <attDef ident="facs" mode="delete"/>
