@@ -1124,7 +1124,7 @@
                   </attDef>
                   
                   <attDef ident="name" mode="change">
-                     <valList mode="add" type="semi">
+                     <valList mode="add" type="closed">
                         <valItem ident="unknown"/>
                         <valItem ident="friends"/>
                         <valItem ident="family"></valItem>
@@ -1983,19 +1983,49 @@
                               <valItem ident="adj. indéf."/>
                               <valItem ident="adj. num."/>
                               <valItem ident="adj. poss."/>
+                              <valItem ident="adj.|prép."/>                             
+                              <valItem ident="adj. rel."/>
                               <valItem ident="adv."/>
+                              <valItem ident="adv. int."/>
+                              <valItem ident="adv. rel."/>
                               <valItem ident="art. déf."/>
+                              <valItem ident="art. déf.|art. part."/>
+                              <valItem ident="art. part.|art. déf."/>
                               <valItem ident="art. déf.|prép."/>
                               <valItem ident="art. indéf."/>
                               <valItem ident="art. part."/>
                               <valItem ident="conj."/>
                               <valItem ident="dém."/>
                               <valItem ident="interj."/>
+                              <valItem ident="loc. adv."/>
                               <valItem ident="loc. conj."/>
                               <valItem ident="mot exclu"/>
                               <valItem ident="nom propre"/>
                               <valItem ident="part. dém."/>
+                              <valItem ident="part. passé en empl. adj."/>
                               <valItem ident="ponctuation"/>
+                              <valItem ident="prép."/>
+                              <valItem ident="prép.|adj."/>
+                              <valItem ident="prép.|pron."/>
+                              <valItem ident="prép.|pron.rel."/>
+                              <valItem ident="pron."/>
+                              <valItem ident="pron. adv."/>
+                              <valItem ident="pron. dém."/>
+                              <valItem ident="pron. indéf."/>
+                              <valItem ident="pron. intér."/>
+                              <valItem ident="pron. interr."/> 
+                              <valItem ident="pron. pers."/>
+                              <valItem ident="pron. poss."/>
+                              <valItem ident="pron. rel."/>
+                              <valItem ident="pron. rel.|prép."/>
+                              <valItem ident="pron. rel."/>
+                              <valItem ident="subst."/>
+                              <valItem ident="subst. fém."/>
+                              <valItem ident="subst. fém|adj."/>
+                              <valItem ident="subst. masc."/>
+                              <valItem ident="subst. masc.|interj."/>
+                              <valItem ident="verbe"/>
+                              
                            </valList>                       
                   </attDef>
                </attList>
@@ -2060,7 +2090,6 @@
                   </attDef>
                </attList>
             </elementSpec>
-            
          </schemaSpec>
          </div1>     
       </body>
