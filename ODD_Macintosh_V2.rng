@@ -5112,14 +5112,21 @@ Elements]</a:documentation>
    <define name="tei_msIdentifier">
       <element name="msIdentifier">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifiant du manuscrit) contient les informations requises pour identifier le manuscrit en cours de description. [11.4. The Manuscript Identifier]</a:documentation>
-         <group>
-            <ref name="tei_country"/>
-            <ref name="tei_settlement"/>
-            <ref name="tei_repository"/>
-            <oneOrMore>
-				<ref name="tei_idno"/>
-			</oneOrMore>
-         </group>
+        <group>
+   <optional>
+      <ref name="tei_country"/>
+   </optional>
+   <optional>
+      <ref name="tei_settlement"/>
+   </optional>
+   <optional>
+      <ref name="tei_repository"/>
+   </optional>
+   <oneOrMore>
+      <ref name="tei_idno"/>
+   </oneOrMore>
+</group>
+
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="oddbyexample-msIdentifier-msId_minimal-constraint-rule-18">
