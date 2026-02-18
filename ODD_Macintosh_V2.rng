@@ -5143,7 +5143,6 @@ Elements]</a:documentation>
          <ref name="tei_att.global.responsibility.attribute.cert"/>
          <ref name="tei_att.global.responsibility.attribute.resp"/>
          <ref name="tei_att.global.source.attribute.source"/>
-         <empty/>
       </element>
    </define>
    <define name="tei_repository">
