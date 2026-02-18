@@ -4526,7 +4526,9 @@ Elements]</a:documentation>
             <ref name="country"/>
             <ref name="settlement"/>
             <ref name="repository"/>
+            <oneOrMore>
             <ref name="idno"/>
+            </oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-msIdentifier-msId_minimal-constraint-report-10">
