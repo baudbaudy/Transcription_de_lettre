@@ -5116,8 +5116,9 @@ Elements]</a:documentation>
             <ref name="tei_country"/>
             <ref name="tei_settlement"/>
             <ref name="tei_repository"/>
-            <ref name="tei_idno"/>
-            <ref name="tei_idno"/>
+            <oneOrMore>
+				<ref name="tei_idno"/>
+			</oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
