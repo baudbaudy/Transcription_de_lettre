@@ -3109,13 +3109,13 @@ Elements]</a:documentation>
    <define name="idno">
       <element name="idno">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifiant) donne un identifiant standardisé qui peut être utilisé pour identifier une référence bibliographique, une personne, un titre d'ouvrage ou une organisation. [13.3.1. Basic Principles 2.2.4. Publication, Distribution, Licensing, etc. 2.2.5. The Series Statement 3.12.2.4. Imprint, Size of a Document, and Reprint Information]</a:documentation>
-         <OneOrMore>
+         <oneOrMore>
             <choice>
                <text/>
                <ref name="model.gLike"/>
                <ref name="idno"/>
             </choice>
-         </OneOrMore>
+         </oneOrMore>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.n"/>
          <ref name="att.global.attribute.xmllang"/>
@@ -4526,7 +4526,9 @@ Elements]</a:documentation>
             <ref name="country"/>
             <ref name="settlement"/>
             <ref name="repository"/>
+<oneOrMore>
             <ref name="idno"/>
+</oneOrMore>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   id="oddbyexample-msIdentifier-msId_minimal-constraint-report-10">
